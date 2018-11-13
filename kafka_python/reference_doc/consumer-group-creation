@@ -1,0 +1,5 @@
+curl -k -X POST \
+-u "admin:Teste123#" \
+-H "Content-Type:application/vnd.kafka.json.v2+json" \
+-d "{\"format\": \"json\", \"auto.offset.reset\": \"earliest\"}" \
+https://129.150.115.252:1080/restproxy/consumers/oehcs-consumer-group

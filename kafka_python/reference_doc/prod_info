@@ -1,0 +1,7 @@
+curl -k -X POST \
+-u "<ngnixusername>:<ngnixpassword>" \
+-H "Content-Type:application/vnd.kafka.json.v2+json" \
+-d "{\"records\":[{\"value\":{\"foo\":\"bar\"}}]}" \
+<basepath>/topics/<mytopicname>
+
+

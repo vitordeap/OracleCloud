@@ -1,0 +1,4 @@
+curl -v -X GET \
+     -H "X-Storage-User: Storage-demotrial:vitor.pinto" \
+     -H "X-Storage-Pass: Abacaxi!1@2#3" \
+     https://demotrial.us.storage.oraclecloud.com/auth/v1.0
