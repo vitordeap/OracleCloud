@@ -5,7 +5,7 @@ import json
 
 response = cStringIO.StringIO()
 
-#mudar nome do topico
+#NAO MUDAR (padrao do oracle)
 data = json.dumps({"format": "json", "auto.offset.reset": "earliest"})
 
 #mudar url >> <basePATH>/consumers/oehcs-consumer-group

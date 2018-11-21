@@ -11,13 +11,16 @@ data = json.dumps({"records" : [{ "value" : {"foo" : "bar" }}]})
 # Mudar url: <basePATH>/topics/<topicNAME>
 url = 'https://129.150.115.252:1080/restproxy/topics/idcs-ff049979217c422fb52a85216ec78831-topicDEMO'
 
+#Mudar User-Password do Cluster:
+USER_PASS = 'admin:Teste123#'
+
 
 c = pycurl.Curl()
 c.setopt(pycurl.SSL_VERIFYPEER, 0)
 c.setopt(pycurl.TIMEOUT, 10)
 c.setopt(pycurl.SSL_VERIFYHOST, 0)
 c.setopt(c.URL, url)
-c.setopt(pycurl.USERPWD, 'admin:Teste123#')
+c.setopt(pycurl.USERPWD, USER_PASS)
 c.setopt(c.HTTPHEADER, ['Content-Type:application/vnd.kafka.json.v2+json'])
 c.setopt(pycurl.POST, 1)
 c.setopt(pycurl.POSTFIELDS,data)

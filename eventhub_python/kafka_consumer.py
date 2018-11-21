@@ -7,8 +7,14 @@ response = cStringIO.StringIO()
 #------------------------------------------------------
 #SUBSCRIBE TO TOPIC
 
+#Mudar nome do topico
 data = json.dumps({"topics": ["topicDEMO"]})
-baseURI = 'https://129.150.115.252:1080/restproxy/consumers/idcs-ff049979217c422fb52a85216ec78831-oehcs-consumer-group/instances/rest-consumer-kakfadedicated-restprxy-1.compute-611977642.oraclecloud.internal-83e7d727-2c19-4ed3-ac9c-0cfa4e6d106f'
+
+#Mudar base_uri
+baseURI = 'https://129.150.115.252:1080/restproxy/consumers/idcs-ff049979217c422fb52a85216ec78831-oehcs-consumer-group/instances/rest-consumer-kakfadedicated-restprxy-1.compute-611977642.oraclecloud.internal-981e3e3b-b095-477f-b279-89ddfd84c748'
+
+
+
 
 subscription_baseURI = baseURI + '/subscription'
 records_baseURI = baseURI + '/records'
